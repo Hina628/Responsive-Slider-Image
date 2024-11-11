@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <title>Responsive Image Slider</title>
+</head>
+
+<body>
+    <div class="slider-container">
+        <h1 id="slider-heading">Image Slider</h1>
+        <div class="slider" id="slider">
+            <img src="image 1.jpg" class="slide active red-text" alt="Slide 1">
+            <img src="image 2.jpg" class="slide blue-text" alt="Slide 2">
+            <img src="image 4.jpg" class="slide green-text" alt="Slide 3">
+            <img src="image 3.jpg" class="slide red-text" alt="Slide 4">
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">❮</button>
+        <button class="next" onclick="changeSlide(1)">❯</button>
+    </div>
+    <div class="description">
+        <h1>IMAGE INFORMATION:</h1>
+        <p id="slide-description">
+            Slide 1: Majestic Mountains
+            "This stunning image captures the grandeur of towering mountains bathed in the warm glow of sunrise. The
+            rugged peaks, draped in a soft layer of snow, rise dramatically against a clear blue sky..."
+            Slide 2: Serene Forest
+            "Immerse yourself in the peaceful embrace of a lush green forest, where towering trees create a natural
+            canopy overhead. Sunlight filters through the leaves, casting dappled patterns..."
+            Slide 3: Vibrant Ocean Sunset
+            "Witness the breathtaking beauty of a sunset over the ocean, where the sky transforms into a canvas of
+            vibrant colors. Shades of orange, pink, and purple blend seamlessly..."
+            Slide 4: Enchanted Waterfall
+            "This captivating image showcases the mesmerizing beauty of a waterfall cascading down rugged cliffs,
+            surrounded by lush greenery. The crystal-clear water tumbles over rocks..."
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
